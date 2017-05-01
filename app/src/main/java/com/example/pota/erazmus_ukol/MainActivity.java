@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
 
@@ -42,6 +43,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        for (EditText text : new EditText[] {editText1,editText2, editText3}) {
+            if (text.getText().length() == 0) {
+                Toast.makeText(this, "Některá pole jsou prázdná", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
         double kusy;
         double cena;
         double smeny;
