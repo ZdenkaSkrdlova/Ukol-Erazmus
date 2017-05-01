@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Erazmus - ukol</string>
+    <string name="zadej_kusy">Zadej pocet prodanych kusu</string>
+    <string name="zadej_cenu">Zadej cenu kusu</string>
+    <string name="zadej_smeny">Zadej pocet odpracovanych smen</string>
+
+    <string-array name="spinnerTyp">
+    <item>Vyber si typ notebooku</item>
+    <item>MSI</item>
+    <item>ACER</item>
+    <item>ASUS</item>
+    <item>LENOVO</item>
+    <item>MACKBOOK</item>
+    <item>DELL</item>
+    </string-array>
+</resources>
